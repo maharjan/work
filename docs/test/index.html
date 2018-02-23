@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>eSewa Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/vue.css">
+</head>
+<body>
+  <div id="app">Preparing knowledge content. Order a coffee!</div>
+  <script>
+    window.$docsify = {
+      name: 'Knowledge Base',
+      coverpage: true,
+      homepage: 'introduction.md',
+      loadSidebar: true,
+      subMaxLevel: 4,
+      search:{
+        paths: 'auto',
+       placeholder: 'Type to search',
+       noData: 'No Result found!',
+       depth: 6
+      },
+      themeColor: '#41a124',
+      auto2top: true
+    }
+  </script>
+  <!-- This script will support document view in offline mode -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+  <!-- end of script -->
+
+  <script src="js/docsify.min.js"></script>
+  <script src="js/search.min.js"></script>
+  <script src="js/front-matter.min.js"></script>
+  <script src="js/code_format/python.min.js"></script>
+  <script src="js/code_format/php.min.js"></script>
+  <script src="js/code_format/java.min.js"></script>
+  <!-- <nav>
+    <a href="#/developers-guide">Introduction</a>
+    <a href="#"></a>
+    <a href="#"></a>
+  </nav> -->
+</body>
+</html>

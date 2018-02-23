@@ -1,0 +1,77 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "Main Page",
+        "source": "readme.md",
+        "url": "index.html",
+        "slug": "index"
+      },
+      {
+        "title": "Intro",
+        "source": "docs/intro.md",
+        "url": "intro.html",
+        "slug": "intro",
+        "sections": [
+          {
+            "title": "First",
+            "source": "docs/1.md",
+            "url": "1.html",
+            "slug": "1"
+          },
+          {
+            "title": "Second",
+            "source": "docs/2.md",
+            "url": "2.html",
+            "slug": "2"
+          }
+        ]
+      },
+      {
+        "title": "Mid",
+        "source": "docs/mid.md",
+        "url": "mid.html",
+        "slug": "mid"
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "readme.md",
+      "title": "Main Page",
+      "pageTitle": "Main Page",
+      "slug": "index"
+    },
+    "intro.html": {
+      "source": "docs/intro.md",
+      "title": "Intro - Main Page",
+      "pageTitle": "Intro",
+      "slug": "intro"
+    },
+    "1.html": {
+      "source": "docs/1.md",
+      "title": "First - Main Page",
+      "pageTitle": "First",
+      "slug": "1"
+    },
+    "2.html": {
+      "source": "docs/2.md",
+      "title": "Second - Main Page",
+      "pageTitle": "Second",
+      "slug": "2"
+    },
+    "mid.html": {
+      "source": "docs/mid.md",
+      "title": "Mid - Main Page",
+      "pageTitle": "Mid",
+      "slug": "mid"
+    }
+  },
+  "sources": {
+    "readme.md": "index.html",
+    "docs/intro.md": "intro.html",
+    "docs/1.md": "1.html",
+    "docs/2.md": "2.html",
+    "docs/mid.md": "mid.html"
+  }
+}
